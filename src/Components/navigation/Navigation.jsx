@@ -3,8 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BtnList } from "@/app/(pages)/data";
 import NavButton from "./NavButton";
-import ResponsiveComponent from "./ResponsiveComponent";
 import useScreenSize from "../hooks/useScreenSize";
+import ResponsiveComponent from "./ResponsiveComponent";
 
 const container = {
   hidden: { opacity: 0 },
