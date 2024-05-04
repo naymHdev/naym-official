@@ -1,5 +1,12 @@
 import Image from "next/image";
-import bg from '../../public/background/home-background.png'
+import bg from "../../public/background/home-background.png";
+import Navigation from "@/Components/navigation/Navigation";
+import RenderModel from "@/Components/projects/RenderModel";
+import dynamic from "next/dynamic";
+
+const Wizard = dynamic(() => import("@/Components/models/Wizard"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -14,10 +21,10 @@ export default function Home() {
       />
 
       <div className="w-full h-screen">
-        {/* <Navigation />
+        <Navigation />
         <RenderModel>
           <Wizard />
-        </RenderModel> */}
+        </RenderModel>
       </div>
     </main>
   );
