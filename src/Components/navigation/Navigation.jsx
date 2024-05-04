@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { BtnList } from "@/app/(pages)/data";
+import { BtnList } from "@/app/data";
 import NavButton from "./NavButton";
 import useScreenSize from "../hooks/useScreenSize";
-import ResponsiveComponent from "./ResponsiveComponent";
+import ResponsiveComponent from "../ResponsiveComponent";
 
 const container = {
   hidden: { opacity: 0 },

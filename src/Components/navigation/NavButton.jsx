@@ -12,7 +12,7 @@ import Link from "next/link";
 import React from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
-import ResponsiveComponent from "./ResponsiveComponent";
+import ResponsiveComponent from "../ResponsiveComponent";
 
 const getIcon = (icon) => {
   switch (icon) {

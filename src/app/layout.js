@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import FireFliesBackground from "@/Components/FireFliesBackground";
+import Sound from "@/Components/Sound";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,7 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <FireFliesBackground />
+        <Sound />
+      </body>
     </html>
   );
 }
