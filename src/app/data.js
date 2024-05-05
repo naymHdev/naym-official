@@ -49,12 +49,12 @@ export const projectsData = [
   },
   {
     id: 4,
-    name: "",
-    description: "",
-    date: "",
-    clientCode: "",
+    name: "WebWorks-Wizards",
+    description: "Welcome to our IT Service Management Web Application, a comprehensive solution built using React and Tailwind CSS. This project aims to streamline IT service requests, incident management, and resource allocation within organizations, enhancing operational efficiency and customer satisfaction.",
+    date: "02-04-24",
+    clientCode: "https://github.com/naymHdev/WebWorks-Wizards",
     serverCode: "",
-    demoLink: "",
+    demoLink: "https://web-works-wizards.netlify.app",
   },
   {
     id: 5,

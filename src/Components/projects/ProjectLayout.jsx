@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ArrowUpRight, Eye } from "lucide-react";
 import Link from "next/link";
 
 const item = {
@@ -23,19 +24,34 @@ const ProjectLayout = ({
       className=" text-sm md:text-base w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
     >
       <div className="">
-        <p className="text-muted sm:text-foreground font-medium">{date}</p>
-        <h1 className="text-foreground text-xl font-semibold mt-6">{name}</h1>
-        <p className="text-muted sm:inline-block mt-2">{description}</p>
-        <div className=" flex items-center justify-evenly mt-8">
-          <button className="border rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
-            Server Site
-          </button>
-          <button className="border rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
-            Client Site
-          </button>
-          <button className="border rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
-            Demo
-          </button>
+        <h1 className="text-foreground text-xl font-semibold">{name}</h1>
+        <p className="text-muted sm:text-foreground text-sm">{date}</p>
+        <p className="text-muted sm:inline-block mt-1">{description}</p>
+        <div className=" flex-wrap gap-5 flex items-center md:justify-start justify-evenly mt-8">
+          {serverCode && (
+            <a target={"_blank"} href={serverCode}>
+              <button className="flex items-center gap-1 border rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
+                Server Site
+                <ArrowUpRight />
+              </button>
+            </a>
+          )}
+
+          {clientCode && (
+            <a target={"_blank"} href={clientCode}>
+              <button className="flex items-center gap-1 border rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
+                Client Site
+                <ArrowUpRight />
+              </button>
+            </a>
+          )}
+          {demoLink && (
+            <a target={"_blank"} href={demoLink}>
+              <button className="border flex items-center gap-1 rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
+                Demo <Eye />
+              </button>
+            </a>
+          )}
         </div>
       </div>
     </ProjectLink>
