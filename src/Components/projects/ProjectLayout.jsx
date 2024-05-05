@@ -7,22 +7,37 @@ const item = {
 };
 
 const ProjectLink = motion(Link);
-const ProjectLayout = ({ name, description, date, demoLink }) => {
+const ProjectLayout = ({
+  name,
+  description,
+  date,
+  demoLink,
+  clientCode,
+  serverCode,
+}) => {
   return (
     <ProjectLink
       variants={item}
       href={demoLink}
       target={"_blank"}
-      className=" text-sm md:text-base flex  items-center justify-between w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
+      className=" text-sm md:text-base w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
     >
-      <div className="flex items-center justify-center space-x-2">
-        <h2 className="text-foreground">{name}</h2>
-        <p className="text-muted hidden sm:inline-block">{description}</p>
+      <div className="">
+        <p className="text-muted sm:text-foreground font-medium">{date}</p>
+        <h1 className="text-foreground text-xl font-semibold mt-6">{name}</h1>
+        <p className="text-muted sm:inline-block mt-2">{description}</p>
+        <div className=" flex items-center justify-evenly mt-8">
+          <button className="border rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
+            Server Site
+          </button>
+          <button className="border rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
+            Client Site
+          </button>
+          <button className="border rounded-xl shadow-md custom-bg px-5 py-3 text-foreground">
+            Demo
+          </button>
+        </div>
       </div>
-      <div className="self-end flex-1 mx-2 mb-1 bg-transparent border-b border-dashed border-muted" />
-      <p className="text-muted sm:text-foreground">
-        {new Date(date).toDateString()}
-      </p>
     </ProjectLink>
   );
 };

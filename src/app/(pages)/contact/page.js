@@ -22,7 +22,7 @@ export default function Contact() {
           <h1 className="text-accent font-semibold text-center text-4xl capitalize">
             summon the wizard
           </h1>
-          <p className="text-center font-light text-sm xs:text-base">
+          <p className="text-center font-light text-sm xs:text-base text-foreground">
             Step into the circle of enchantment and weave your words into the
             fabric of the cosmos. Whether you seek to conjure collaborations,
             unlock mysteries, or simply share tales of adventure, your messages
