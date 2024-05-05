@@ -64,10 +64,12 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
+        {/* Skill section */}
+        {/* https://skillicons.dev/icons?i=js,html,css,discord,figma,firebase,git,github,githubactions,ts,vite,vscode,react,redux,next,tailwind,bootstrap,express,nodejs,mongodb */}
         <ItemLayout className={"col-span-full"}>
           <img
             className="w-full h-auto"
-            src={`https://skillicons.dev/icons?i=appwrite,aws,babel,bootstrap,cloudflare,css,d3,docker,figma,firebase,gatsby,git,github,graphql,html,ipfs,js,jquery,kubernetes,linux,mongodb,mysql,netlify,nextjs,nodejs,npm,postgres,react,redux,replit,sass,supabase,tailwind,threejs,vercel,vite,vscode,yarn`}
+            src={`https://skillicons.dev/icons?i=html,css,tailwind,bootstrap,figma,firebase,git,github,js,ts,jquery,mongodb,netlify,nodejs,express,react,redux,nextjs,threejs,vercel,vite,vscode,npm,yarn`}
             alt="Naym Hossen"
             loading="lazy"
           />
