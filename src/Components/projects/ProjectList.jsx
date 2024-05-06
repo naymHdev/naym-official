@@ -44,7 +44,7 @@ const ProjectList = ({ projects }) => {
         total={projects?.length}
         onChange={handlePageChange}
         showSizeChanger={false}
-        showQuickJumper={true}
+        showQuickJumper={false}
         itemRender={(item, type, originalElement) => (
           <li
             key={item.key}
