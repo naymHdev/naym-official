@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Eye } from "lucide-react";
 import Link from "next/link";

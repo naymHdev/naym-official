@@ -38,8 +38,6 @@ export default function Form() {
       }
     );
 
-    // comment out the above toast.info and uncomment the below code to enable emailjs
-
     emailjs
       .send(
         process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -48,7 +46,7 @@ export default function Form() {
         {
           publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
           limitRate: {
-            throttle: 5000, // you can not send more then 1 email per 5 seconds
+            throttle: 5000,
           },
         }
       )
@@ -62,7 +60,6 @@ export default function Form() {
           );
         },
         (error) => {
-          // console.log("FAILED...", error.text);
           toast.error(
             "There was an error sending your message, please try again later!",
             {
@@ -77,7 +74,7 @@ export default function Form() {
 
   const onSubmit = (data) => {
     const templateParams = {
-      to_name: "CodeBucks",
+      to_name: "naymHossen",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,

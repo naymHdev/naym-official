@@ -1,8 +1,8 @@
 import Image from "next/image";
 import bg from "../../public/background/home-background.png";
-import Navigation from "@/Components/navigation/Navigation";
 import dynamic from "next/dynamic";
 import RenderModel from "@/Components/RenderModel";
+import Navigation from "@/Components/navigation/Navigation";
 
 const Wizard = dynamic(() => import("@/Components/models/Wizard"), {
   ssr: false,

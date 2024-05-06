@@ -19,7 +19,6 @@ const ProjectList = ({ projects }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
 
-  // Calculate start and end indexes for pagination
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
@@ -38,7 +37,8 @@ const ProjectList = ({ projects }) => {
       {currentProperties?.map((project, index) => {
         return <ProjectLayout key={index} {...project} />;
       })}
-      <Pagination className="mt-5"
+      <Pagination
+        className="mt-5"
         current={currentPage}
         pageSize={itemsPerPage}
         total={projects?.length}
@@ -46,10 +46,7 @@ const ProjectList = ({ projects }) => {
         showSizeChanger={false}
         showQuickJumper={false}
         itemRender={(item, type, originalElement) => (
-          <li
-            key={item.key}
-            className="custom-bg text-white"
-          >
+          <li key={item.key} className="custom-bg text-white">
             {originalElement}
           </li>
         )}

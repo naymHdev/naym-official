@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
@@ -63,9 +64,6 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-
-        {/* Skill section */}
-        {/* https://skillicons.dev/icons?i=js,html,css,discord,figma,firebase,git,github,githubactions,ts,vite,vscode,react,redux,next,tailwind,bootstrap,express,nodejs,mongodb */}
         <ItemLayout className={"col-span-full"}>
           <img
             className="w-full h-auto"
