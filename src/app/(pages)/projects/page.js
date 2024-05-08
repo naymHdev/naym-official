@@ -4,7 +4,7 @@ import bg from "../../../../public/background/projects-background.png";
 import ProjectList from "@/Components/projects/ProjectList";
 import RenderModel from "@/Components/RenderModel";
 import { projectsData } from "../../data";
-import Staff from "@/Components/models/Staff";
+import Design from "@/Components/models/Design";
 
 // const Staff = dynamic(() => import("@/components/models/Staff"), {
 //   ssr: false,
@@ -29,7 +29,7 @@ export default function Projects() {
 
       <div className="flex items-center justify-center fixed  top-16  lg:top-20 -translate-x-1/2 lg:translate-x-0 -z-10 left-1/2 lg:-left-24 h-screen">
         <RenderModel>
-          <Staff />
+          <Design />
         </RenderModel>
       </div>
     </>
