@@ -69,8 +69,6 @@ export default function Form() {
         }
       );
   };
-  console.log("object", process.env.NEXT_PUBLIC_SERVICE_ID);
-  console.log("object");
 
   const onSubmit = (data) => {
     const templateParams = {
