@@ -3,11 +3,12 @@ import bg from "../../../../public/background/projects-background.png";
 import ProjectList from "@/Components/projects/ProjectList";
 import RenderModel from "@/Components/RenderModel";
 import { projectsData } from "../../data";
-import dynamic from "next/dynamic";
+import Design from "@/Components/models/Design";
+// import dynamic from "next/dynamic";
 
-const Designs = dynamic(() => import("@/Components/models/Design"), {
-  ssr: false,
-});
+// const Designs = dynamic(() => import("@/Components/models/Design"), {
+//   ssr: false,
+// });
 
 export const metadata = {
   title: "Projects",
@@ -28,7 +29,7 @@ export default function Projects() {
 
       <div className="flex items-center justify-center fixed  top-16  lg:top-20 -translate-x-1/2 lg:translate-x-0 -z-10 left-1/2 lg:-left-24 h-screen">
         <RenderModel>
-          <Designs />
+          <Design />
         </RenderModel>
       </div>
     </>
